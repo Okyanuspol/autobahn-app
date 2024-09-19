@@ -9,11 +9,13 @@ import Ladestationen from './components/Ladestationen';
 function App() {
   return (
       <Routes>
-        <Route path="/" element={<AutobahnListe />} />
+        <Route path="/autobahn-app"  >
+            <Route path="" element={<AutobahnListe />} />
         {/* <Route path="/autobahn/:roadId" element={<AutobahnDetail />} /> */}
-        <Route path="/autobahn/:roadId/baustellen" element={<Baustellen />} />
-        <Route path="/autobahn/:roadId/warnungen" element={<Warnungen />} />
-        <Route path="/autobahn/:roadId/ladestationen" element={<Ladestationen />} />
+            <Route path=":roadId/baustellen" element={<Baustellen />} />
+            <Route path=":roadId/warnungen" element={<Warnungen />} />
+            <Route path=":roadId/ladestationen" element={<Ladestationen />} />
+        </Route>
       </Routes>
   );
 }

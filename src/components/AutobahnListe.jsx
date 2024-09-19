@@ -43,13 +43,13 @@ const AutobahnListe = () => {
             <li key={index} className="autobahn-item">
               <h2 className= "autobahn-name">{autobahn}</h2>
               <div className="button-group">
-                <Link to={`/autobahn/${autobahn}/baustellen`}>
+                <Link to={`/autobahn-app/${autobahn}/baustellen`}>
                   <button className="action-button">Baustellen</button>
                 </Link>
-                <Link to={`/autobahn/${autobahn}/warnungen`}>
+                <Link to={`/autobahn-app/${autobahn}/warnungen`}>
                   <button className="action-button">Warnungen</button>
                 </Link>
-                <Link to={`/autobahn/${autobahn}/ladestationen`}>
+                <Link to={`/autobahn-app/${autobahn}/ladestationen`}>
                   <button className="action-button">Ladestationen</button>
                 </Link>
               </div>
